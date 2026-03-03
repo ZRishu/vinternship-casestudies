@@ -1,0 +1,21 @@
+{
+  "name": "19",
+  "version": "1.0.0",
+  "description": "IoC Containers & Advanced Dependency Management",
+  "author": "Rishu",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "npm run build && node dist/NewsAggregator.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.3",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.2.2",
+    "typedi": "^0.10.0"
+  }
+}
