@@ -1,0 +1,49 @@
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #1f2430;
+  background: #f3f4f6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+#root {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 28px 0 44px;
+}
+
+h1,
+h2 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.35rem;
+}
+
+p {
+  margin: 0;
+}

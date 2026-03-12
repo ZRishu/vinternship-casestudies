@@ -1,0 +1,172 @@
+.app-shell {
+  display: grid;
+  gap: 18px;
+}
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: 320px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.panel {
+  min-width: 0;
+  border: 1px solid #bfc3ca;
+  border-radius: 0;
+  background: #fcfcfb;
+  padding: 22px;
+  box-shadow: 4px 4px 0 #e3e4e8;
+}
+
+.panel--sidebar,
+.panel--content {
+  min-width: 0;
+}
+
+.summary-card,
+.surface {
+  border: 1px solid #c9ccd3;
+  border-radius: 0;
+  background: #fff;
+  padding: 14px;
+}
+
+.summary-card strong {
+  display: block;
+  font-size: 1.55rem;
+  margin-bottom: 4px;
+}
+
+.eyebrow,
+.panel__eyebrow {
+  margin: 0 0 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6a6f79;
+  letter-spacing: 0.08em;
+}
+
+.lede {
+  color: #555b66;
+  max-width: 60ch;
+}
+
+.panel__header,
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.meta-row {
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.panel__header {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e1e3e8;
+}
+
+.stack,
+.list,
+.field {
+  display: grid;
+  gap: 12px;
+}
+
+.stack,
+.list {
+  margin-top: 16px;
+}
+
+.field span {
+  font-weight: 600;
+}
+
+.input,
+.button {
+  font: inherit;
+  border-radius: 0;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #bfc3ca;
+  background: #ffffff;
+  padding: 11px 12px;
+}
+
+.button {
+  border: 1px solid #aeb4bf;
+  background: #eef1f5;
+  color: #252a33;
+  padding: 10px 14px;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.badge {
+  padding: 4px 8px;
+  border: 1px solid #c4c8d0;
+  border-radius: 0;
+  background: #f1f3f6;
+  font-size: 0.85rem;
+  color: #4d5561;
+  white-space: nowrap;
+}
+
+small,
+.surface p {
+  color: #555b66;
+}
+
+code {
+  background: #eef1f5;
+  border-radius: 0;
+  padding: 2px 6px;
+}
+
+.chart-shell {
+  margin-top: 16px;
+  height: 260px;
+}
+
+.summary-card {
+  background: #f4f6f8;
+  color: #252a33;
+}
+
+.summary-card span {
+  color: #636b78;
+}
+
+.button:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 2px 2px 0 #d9dde4;
+}
+
+@media (max-width: 900px) {
+  .layout-grid,
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .panel__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
