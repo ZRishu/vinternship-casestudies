@@ -1,0 +1,48 @@
+:root {
+  --bg: #f8fafc;
+  --fg: #0f172a;
+  --muted: #475569;
+  --border: #dbe2ea;
+  --panel-bg: #ffffff;
+  --input-bg: #ffffff;
+  --button-bg: #eff6ff;
+  --button-fg: #1d4ed8;
+  --button-border: #93c5fd;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--fg);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root[data-theme='dark'] {
+  --bg: #0b1220;
+  --fg: #e2e8f0;
+  --muted: #94a3b8;
+  --border: #273247;
+  --panel-bg: #111b2f;
+  --input-bg: #0b1220;
+  --button-bg: #1e3a8a;
+  --button-fg: #dbeafe;
+  --button-border: #60a5fa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #dbeafe 0%, var(--bg) 45%);
+  color: var(--fg);
+}
+
+:root[data-theme='dark'] body {
+  background: radial-gradient(circle at top left, #0f172a 0%, var(--bg) 45%);
+}
