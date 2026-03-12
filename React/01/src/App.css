@@ -1,0 +1,96 @@
+.app {
+    padding: 28px;
+    text-align: left;
+}
+
+h1 {
+    margin: 0 0 20px;
+}
+
+.grid {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    margin-bottom: 16px;
+}
+
+.panel {
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+    background: var(--social-bg);
+}
+
+.panel h2 {
+    margin: 0 0 10px;
+}
+
+.editor {
+    display: grid;
+    gap: 10px;
+}
+
+.editor label {
+    display: grid;
+    gap: 6px;
+    font-size: 14px;
+}
+
+.editor input {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 10px;
+    font: inherit;
+}
+
+.editor button,
+.asset-list button {
+    width: fit-content;
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--accent-border);
+    background: var(--accent-bg);
+    color: var(--text-h);
+    font: inherit;
+    cursor: pointer;
+}
+
+.asset-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.asset-list li {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    align-items: center;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.positive {
+    color: #0f8b4c;
+}
+
+.negative {
+    color: #c53333;
+}
+
+@media (max-width: 850px) {
+    .app {
+        padding: 16px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .asset-list li {
+        grid-template-columns: 1fr;
+    }
+}
